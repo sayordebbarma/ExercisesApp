@@ -41,3 +41,12 @@
   color: #888;
 }
 */
+
+.hero-banner-img {
+  position: absolute;
+  right: 40px;
+  top: 0px;
+  width: 600px;
+  height: 700px;
+  /*margin-top: -40px;*/
+}
