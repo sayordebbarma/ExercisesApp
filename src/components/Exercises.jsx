@@ -2,6 +2,7 @@ import React, { useEffect, useState} from 'react'
 import { exerciseOptions, fetchData } from '../utils/fetchData'
 import { Box, Typography, Stack } from '@mui/material';
 import Pagination from '@mui/material';
+import ExerciseCard from './ExerciseCard';
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
   return (
@@ -20,7 +21,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         flexWrap= 'wrap' justifyContent= 'center'
       >
         {exercises.map((exercise, index) => (
-          <p>{exercise.name}</p>
+          <ExerciseCard key={index} exercise={exercise}/>
         ))}
 
       </Stack>
